@@ -1,0 +1,18 @@
+model_name: 'VQVAE'
+discriminator_name: 'Discriminator'
+
+save_pt_dir: '_construct/weight/vqvae_0/pt'
+save_onnx_dir: '_construct/weight/vqvae_0/onnx'
+
+autoencoder_params:
+  z_channels: 3
+  codebook_size : 20
+  down_channels : [32, 64, 128]
+  mid_channels : [128, 128]
+  down_sample : [True, True]
+  attn_down : [False, False]
+  norm_channels: 32
+  num_heads: 16
+  num_down_layers : 1
+  num_mid_layers : 1
+  num_up_layers : 1

@@ -1,0 +1,9 @@
+model_cfg_path: 'config/model/vqvae_0.yaml'
+
+train:
+  dataset_cfg_path: 'config/dataset/mnist.yaml'
+  proc_cfg_path: 'config/proc/train_vqvae_0.yaml'
+
+test:
+  dataset_cfg_path: 'config/dataset/mnist.yaml'
+  proc_cfg_path: 'config/proc/test_vqvae_0.yaml'

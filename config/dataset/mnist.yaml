@@ -1,0 +1,3 @@
+dataset_name: 'MnistDataset'
+dataset_dir: '_construct/data/mnist'
+img_channel_num: 1

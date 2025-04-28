@@ -1,0 +1,23 @@
+train:
+  trainer: 'VQVAETrainer'
+  device: 'cuda:0'
+  lr: 0.0001
+  epoch_num: 10
+  seed: 114514
+  disc_start: 1000
+  accumulating_step_num: 1
+  img_save_step_num: 8
+  save_sample_dir: '_construct/sample'
+  disc_weight: 0.5
+  codebook_weight: 1
+  commitment_beta: 0.2
+  perceptual_weight: 1
+
+data_loader:
+  batch_size: 64
+  shuffle_mode: True
+  worker_num: 4
+
+latent_shrink_factor: 8
+
+save_period: 20
