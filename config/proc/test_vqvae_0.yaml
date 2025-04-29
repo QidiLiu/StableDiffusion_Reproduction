@@ -1,7 +1,3 @@
 test:
-  tester: 'LDMTester'
+  tester: 'VQVAETester'
   device: 'cuda:0'
-
-vae_weight_dir: '_construct/sd_weight'
-
-latent_shrink_factor: 8

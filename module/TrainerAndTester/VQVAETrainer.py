@@ -16,10 +16,10 @@ class VQVAETrainer:
     def __init__(self, init_dataset_cfg: Dict[str, str], init_model_cfg: Dict[str, str]):
         # --- Setup dataset ---
         dataset_name = init_dataset_cfg['dataset_name']
-        dataset_dir = init_dataset_cfg['dataset_dir']
+        dataset_root = init_dataset_cfg['dataset_root']
         self.img_channel_num = init_dataset_cfg['img_channel_num']
         self.dataset = globals()[dataset_name]()
-        self.dataset.FindData(dataset_dir)
+        self.dataset.FindData(dataset_root)
         
         # --- Setup model ---
         self.model_info = {}
@@ -184,4 +184,4 @@ class VQVAETrainer:
         # --- Save checkpoints ---
         torch.save(model.state_dict(), Path(self.save_pt_dir).joinpath('vqvae_autoencoder_final.pt'))
         torch.save(discriminator.state_dict(), Path(self.save_pt_dir).joinpath('vqvae_discriminator_final.pt'))
-        print(f"[INFO] Saved model checkpoints at epoch {epoch}")
+        print(f'[INFO] Saved model checkpoints at epoch {epoch}')

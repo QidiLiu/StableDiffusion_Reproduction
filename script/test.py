@@ -14,10 +14,11 @@ def main():
     dataset_cfg, model_cfg, test_cfg = LoadCfg(args.cfg, 'test')
 
     # Prepare and execute training process
-    tester_name = test_cfg['test_tester']
+    tester_name = test_cfg['test']['tester']
     tester = globals()[tester_name](dataset_cfg, model_cfg)
     tester.Test(test_cfg)
 
 
 if __name__ == '__main__':
     main()
+    print('[DEBUG] Wow, it works!')
