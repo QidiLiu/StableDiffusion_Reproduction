@@ -1,0 +1,14 @@
+test:
+  tester: 'UNetTester'
+  device: 'cuda:3'
+  seed: 114514
+  sample_num: 25
+  sample_grid_row_num: 5
+  save_sample_dir: '_construct/sample/test'
+
+vae:
+  type: 'VQVAE'
+  weight_dir: '_construct/weight/vqvae_0/pt'
+
+img_size: 28
+img_channel_num: 1

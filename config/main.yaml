@@ -1,0 +1,9 @@
+model_cfg_path: 'config/model/unet_0.yaml'
+
+train:
+  dataset_cfg_path: 'config/dataset/mnist_latent.yaml'
+  proc_cfg_path: 'config/proc/train_unet_0.yaml'
+
+test:
+  dataset_cfg_path: 'config/dataset/mnist_latent.yaml'
+  proc_cfg_path: 'config/proc/test_unet_0.yaml'

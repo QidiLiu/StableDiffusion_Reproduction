@@ -1,0 +1,2 @@
+dataset_name: 'MnistLatentDataset'
+dataset_root: '_construct/data/mnist_latent'
