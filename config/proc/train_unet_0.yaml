@@ -1,0 +1,13 @@
+train:
+  trainer: 'UNetTrainer'
+  device: 'cuda:3'
+  lr: 0.00001
+  epoch_num: 100
+  save_sample_dir: '_construct/sample/train'
+
+data_loader:
+  batch_size: 64
+  shuffle_mode: True
+  worker_num: 4
+
+save_period: 20
